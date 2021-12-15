@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" >
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <img src="./images/logo.svg">
+
+  <section>
+
+    <div class="infoWrapper">
+      <form class="myForm">
+        <h2>Bill</label>
+        <input class="input" type="number" placeholder="" id="bill">
+        
+        <h2> Select Tip % </h2>
+        <button class="tip" type="button" data-value="0.05"> 5% </button>
+        <button class="tip" type="button" data-value="0.10"> 10% </button> 
+        <button class="tip" type="button" data-value="0.15"> 15% </button>
+        <button class="tip" type="button" data-value="0.25"> 25% </button>
+        <button class="tip" type="button" data-value="0.50"> 50% </button>
+        <input class="custom" type="number"  placeholder="Custom "> </button>
+        
+        <div class="numberOfPeople"><h2> Number of People </h2>  <p class="textPeople"> Can't be zero </p></div>
+        <input class="input" id="people" type="number" type="submit">
+      
+    </div>
+
+    <div class="resultsWrapper">
+      <div>
+        <p class="result tipAmount">  Tip Amount <br> <span class="personText">/ person </span> </p>
+        <h1 class="totalTip"> $ 0.00</h1>
+      </div>
+
+      <div>
+        <p class="result total">Total <br> <span class="personText">/ person </span></p>
+        <h1 class="totalBill"> $ 0.00</h1>
+      </div>
+
+      <input type="reset" value="Reset" class="reset"></button>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Manuela Fernandez</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
